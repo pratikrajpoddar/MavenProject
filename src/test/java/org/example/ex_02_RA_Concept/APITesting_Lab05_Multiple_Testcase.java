@@ -1,5 +1,18 @@
 package org.example.ex_02_RA_Concept;
 
-public class APITesting_Lab05_Multiple_Testcase {
+import io.restassured.RestAssured;
 
+public class APITesting_Lab05_Multiple_Testcase {
+    public static void main(String[] args) {
+        String pincode = "110092";
+        RestAssured
+                .given()
+                .baseUri("https://api.zippopotam.us")
+                .basePath("/IN/"+pincode)
+                .when()
+                .get()
+                .then()
+                .log() .all().statusCode(200);
+
+    }
 }
