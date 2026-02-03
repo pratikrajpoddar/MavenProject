@@ -1,4 +1,4 @@
-package org.example;
+package org.example.ex_01_RA_HelloWorld;
 
 import io.restassured.RestAssured;
 //Second Test
@@ -7,7 +7,7 @@ public class HelloWorld {
         RestAssured.given() .baseUri("https://www.google.com/").log().all()
                         .when().get()
                         .then().statusCode(200).log().all();
-//Test Comment
+
 
     }
 }
