@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Test Suite">
+
+    <test name="ATB14xAPIAutomationPrograms" verbose="2" preserve-order="true">
+
+        <parameter name="browser" value="firefox"></parameter>
+
+        <classes>
+
+
+            <class name="org.example.ex_05_TestNGAdvanceExample.APITesting018_TestNG_Parameter">
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>
